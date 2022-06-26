@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  padding: 20px;
+  text-align: center;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-card {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.preview {
+  background-color: blue;
+  flex-basis: 50%;
+}
+
+.preview h2 {
+  color: white;
+  margin-bottom: 15px;
+  padding: 10px;
+  text-align: center;
+}
+
+.card {
+  align-items: center;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: space-around;
+  margin: auto;
+  width: 250px;
+}
