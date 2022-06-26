@@ -34,9 +34,10 @@ enableButton = () => {
 
   const maxSum = 210;
   const max = 90;
+  const min = 0;
 
   const validateAttr = [cardAttr1, cardAttr2, cardAttr3]
-    .every((attr) => attr > 0 && attr <= max);
+    .every((attr) => attr >= min && attr <= max);
 
   const sumAttr = (Number(cardAttr1) + Number(cardAttr2) + Number(cardAttr3) <= maxSum);
 
