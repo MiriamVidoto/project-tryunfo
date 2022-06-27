@@ -4,25 +4,18 @@
   padding: 0;
 }
 
-.preview {
-  background-color: blue;
-  flex-basis: 50%;
-}
-
-.preview h2 {
-  color: white;
-  margin-bottom: 15px;
-  padding: 10px;
-  text-align: center;
-}
-
 .card {
   align-items: center;
   background-color: aliceblue;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   height: 400px;
   justify-content: space-around;
-  margin: auto;
+  margin: 20px;
   width: 250px;
+}
+
+img {
+  width: 150px;
 }

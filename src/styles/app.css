@@ -18,3 +18,25 @@ h1 {
   display: flex;
   justify-content: space-between;
 }
+
+.preview {
+  align-items: center;
+  background-color: blue;
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.preview h2 {
+  color: white;
+  margin-bottom: 15px;
+  padding: 10px;
+  text-align: center;
+}
+
+.cards {
+  background-color: rgba(0, 0, 255, 0.415);
+  display: flex;
+  justify-content: space-around;
+}
