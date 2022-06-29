@@ -36,7 +36,6 @@ h1 {
 }
 
 .cards {
-  background-image: url(https://cdn.pixabay.com/photo/2020/02/02/05/52/the-bottom-of-the-sea-4812078_960_720.jpg);
   display: flex;
   justify-content: space-around;
 }
