@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-.card {
+.cardPreview {
   align-items: center;
   background-color: aliceblue;
   border-radius: 10px;
@@ -13,6 +13,7 @@
   height: 400px;
   justify-content: space-around;
   margin: 20px;
+  text-align: center;
   width: 250px;
 }
 

@@ -86,7 +86,7 @@ addNewcard = (event) => {
   };
 
   this.setState((prevState) => ({
-    cards: [card, ...prevState.cards],
+    cards: [...prevState.cards, card],
     cardName: '',
     cardDescription: '',
     cardAttr1: '0',
@@ -106,6 +106,16 @@ validateTrunfo = () => {
   } else {
     this.setState({ hasTrunfo: false });
   }
+}
+
+handleDetete = ({ target }) => {
+  const { cards } = this.state;
+  const cardDel = target.previousElementSibling.firstChild.innerText;
+  const newCards = cards.filter((card) => card.cardName !== cardDel);
+
+  this.setState({
+    cards: newCards,
+  }, () => this.validateTrunfo());
 }
 
 render() {
@@ -157,17 +167,25 @@ render() {
       </div>
       <div className="cards">
         { cards.map((card) => (
-          <Card
-            key={ card.cardName }
-            cardName={ card.cardName }
-            cardDescription={ card.cardDescription }
-            cardAttr1={ card.cardAttr1 }
-            cardAttr2={ card.cardAttr2 }
-            cardAttr3={ card.cardAttr3 }
-            cardImage={ card.cardImage }
-            cardRare={ card.cardRare }
-            cardTrunfo={ card.cardTrunfo }
-          />
+          <div className="card" key={ card.cardName }>
+            <Card
+              cardName={ card.cardName }
+              cardDescription={ card.cardDescription }
+              cardAttr1={ card.cardAttr1 }
+              cardAttr2={ card.cardAttr2 }
+              cardAttr3={ card.cardAttr3 }
+              cardImage={ card.cardImage }
+              cardRare={ card.cardRare }
+              cardTrunfo={ card.cardTrunfo }
+            />
+            <button
+              data-testid="delete-button"
+              type="button"
+              onClick={ this.handleDetete }
+            >
+              Excluir
+            </button>
+          </div>
         )) }
       </div>
     </div>
