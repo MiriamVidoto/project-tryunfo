@@ -6,7 +6,7 @@ Foi desenvolvido uma aplicação para criação de cartas para um jogo no estilo
 
   https://miriamvidoto.github.io/project-tryunfo/
 
-  ![img](./solar-system.png)
+  ![img](./tryunfo.png)
 
 Nessa aplicação, a pessoa usuária poderá:
   * Criar um baralho com o tema livre;
