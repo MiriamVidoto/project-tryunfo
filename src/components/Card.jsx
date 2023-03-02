@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../styles/card.css';
 
 class Card extends React.Component {
   render() {
@@ -14,7 +13,7 @@ class Card extends React.Component {
       cardTrunfo } = this.props;
 
     return (
-      <div className="cardPreview ">
+      <div className="cardPreview">
         <h3 data-testid="name-card">{ cardName }</h3>
         <img data-testid="image-card" src={ cardImage } alt={ cardName } />
         <p data-testid="description-card"><em>{ cardDescription }</em></p>

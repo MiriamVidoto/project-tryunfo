@@ -2,7 +2,11 @@
 
 Este foi um projeto realizado durante o meu curso  na Trybe.
 
-Foi desenvolvido um jogo no estilo Super Trunfo utilizando ReactJS.  
+Foi desenvolvido uma aplicação para criação de cartas para um jogo no estilo Super Trunfo utilizando ReactJS.
+
+  https://miriamvidoto.github.io/project-tryunfo/
+
+  ![img](./solar-system.png)
 
 Nessa aplicação, a pessoa usuária poderá:
   * Criar um baralho com o tema livre;
@@ -18,3 +22,5 @@ Foi utilizado TDD durante o desenvolvimento de todo o projeto.
   - Capturar eventos utilizando a sintaxe do React
   - Criar formulários utilizando sintaxe JSX com as tags: `input`, `textarea`, `select`, `form`, `checkbox`
   - Transmitir informações de componentes filhos para componentes pais via callbacks
+
+###### Projeto desenvolvido por: [Miriam Vidoto](https://github.com/MiriamVidoto)
